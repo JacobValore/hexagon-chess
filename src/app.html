@@ -4,9 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-	<link rel="stylesheet" href="./style.css">
 	<meta name="viewport" content="width=device-width" />
-	<meta name="author" content="Jacob Valore">
 	<!-- <script src="./jquery-3.7.0.min.js"></script> -->
 	%sveltekit.head%
 </head>
@@ -17,7 +15,14 @@
 
 <style>
 	:root {
+		--gray-4: #141413; /*  */
+		--gray-3: #21201F; /* Sidebar Hover BG */
+		--gray-2: #262421; /* Sidebar BG */
+		--gray-1: #302e2b; /* Background */
+		--light-2: #DEDEDE; /* Sidebar Text */
+		--light-1: #FFFFFF; /* White, Sidebar Hover Text*/
 		--bg: rgb(46, 46, 46);
+		--sb-width: 150px;
 	}
 
 	/* Base Style */
@@ -26,9 +31,8 @@
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		background-color: var(--bg);
 		font-family: sans-serif;
-		/* color: var(--text-color); */
+		color: white;
 	}
 	html{
 		width: 100%;

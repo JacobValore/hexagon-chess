@@ -16,14 +16,7 @@
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div
-	bind:this={element}
-	on:click={() => {
-		goto(`/${link}`);
-		setActive();
-	}}
-	class={isActive === true ? 'tabItem tabItemActive' : 'tabItem'}
->
+<div on:click={() => { goto(`/${link}`); }} class="">
 	<i class="{classStyle} sidebarIcon" />
 	<span>{name}</span>
 </div>
